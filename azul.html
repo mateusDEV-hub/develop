@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Azul</title>
+    <link rel="stylesheet" href="styleA.css">
+</head>
+<body>
+    <h1 class="azulsin">Sua equipe está assim na Interclasse</h1>
+    <h2>Tabela do Azul</h2>
+    <button onclick="authenticateUser()">Login do Usuário Chefe</button>
+    <br><br>
+    <div id="editor" class="hidden">
+        <input type="text" id="sport" placeholder="Nome do esporte">
+        <input type="number" id="score" placeholder="Pontuação">
+        <button onclick="addRow()">Adicionar</button>
+    </div>
+    <br>
+    <table id="sportsTable">
+        <thead>
+            <tr>
+                <th>Esporte</th>
+                <th>Pontuação</th>
+                <th class="delete-btn hidden">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <script src="scriptA.js"></script>
+</body>
+</html>

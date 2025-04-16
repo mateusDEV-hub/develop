@@ -1,0 +1,77 @@
+body {
+    background-color: #4d4d4d;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(170, 165, 165);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+/* Estilização do cabeçalho */
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.cabecalho button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.cabecalho button:hover {
+    background-color: #777;
+}
+
+/* Container dos botões coloridos */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+button {
+    padding: 20px 30px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Cores dos botões */
+#vermelho { background-color: red; }
+#branco { background-color: white; color: black; }
+#preto { background-color: black; }
+#azul { background-color: blue; }
+
+/* Classes para cores do texto */
+.branquin { color: azure; }
+.azulzin { color: rgb(83, 83, 219); }
+.pretin { color: black; }
+.vermelin { color: rgb(182, 49, 49); }
+
+a{
+
+    display: flex;
+    justify-content:center;
+}

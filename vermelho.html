@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interclasse</title>
+
+    <!-- Conectar o CSS -->
+    <link rel="stylesheet" href="styleV.css">
+</head>
+<body>
+    <h1 class="vermelin">Sua equipe está assim na Interclasse</h1>
+    <script src="scriptV.js"></script>
+
+
+
+
+
+    <h2>Tabela do Vermelho</h2>
+    <button onclick="authenticateUser()">Login para editar</button>
+    <br><br>
+    <div id="editor" class="hidden">
+        <input type="text" id="sport" placeholder="Nome do esporte">
+        <input type="number" id="score" placeholder="Pontuação">
+        <button onclick="addRow()">Adicionar</button>
+    </div>
+    <br>
+    <table id="sportsTable">
+        <thead>
+            <tr>
+                <th>Esporte</th>
+                <th>Pontuação</th>
+                <th class="delete-btn hidden">Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+
+
+
+
+
+</body>
+</html>

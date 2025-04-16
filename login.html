@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" >
+</head>
+<body>
+
+    <h2>Create an account</h2>
+    <a class="esquecisenha" href="loginsenha.html">esqueceu a senha?</a>
+
+
+    <div class="hotbar">
+
+        <input type="name" id="nome" placeholder="Nome">
+        
+        <input type="sobrenome"id="sobrenome" placeholder="Sobrenome">
+
+        <input type="text" id="username" placeholder="user">
+
+        <input type="password" id="password" placeholder="password">
+
+        <input type="text" id="gmail" placeholder="gmail">
+
+        <button class="cadastro" onclick="cadastrar()">Create</button>
+
+        <button class="login" onclick="logar()">Login</button>
+    </div>
+
+    <script>
+        // Função para cadastrar um novo usuário
+        function cadastrar() {
+            let nome = document.getElementById("username").value;
+            let senha = document.getElementById("password").value;
+
+            if (nome === "" || senha === "") {
+                alert("Preencha todos os campos!");
+                return;
+            }
+
+            localStorage.setItem("usuarioNome", nome);
+            localStorage.setItem("usuarioSenha", senha);
+            alert("Cadastro realizado com sucesso!");
+        }
+
+        // Função para fazer login
+        function logar() {
+            let nome = document.getElementById("username").value;
+            let senha = document.getElementById("password").value;
+
+            let nomeSalvo = localStorage.getItem("usuarioNome");
+            let senhaSalva = localStorage.getItem("usuarioSenha");
+
+            if (nome === nomeSalvo && senha === senhaSalva) {
+                localStorage.setItem("usuarioLogado", "true"); // Marca como logado
+                alert("Login bem-sucedido!");
+                window.location.href = "index.html"; // Redireciona para a página inicial
+            } else {
+                alert("Nome ou senha incorretos!");
+            }
+        }
+    </script>
+
+</body>
+</html>
